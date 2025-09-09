@@ -16,7 +16,7 @@ find_package(sensor_msgs REQUIRED)
 # Generate messages
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HumanDataMsg.msg"
-  DEPENDENCIES sensor_msgs builtin_interfaces
+  DEPENDENCIES sensor_msgs builtin_interfaces std_msgs
 )
 
 if(BUILD_TESTING)
