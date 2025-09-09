@@ -12,11 +12,12 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(straps_msgs REQUIRED)
 
 # Generate messages
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HumanDataMsg.msg"
-  DEPENDENCIES sensor_msgs builtin_interfaces std_msgs
+  DEPENDENCIES sensor_msgs builtin_interfaces std_msgs straps_msgs
 )
 
 if(BUILD_TESTING)
