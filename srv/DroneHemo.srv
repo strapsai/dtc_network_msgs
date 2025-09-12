@@ -4,6 +4,6 @@ dtc_network_msgs/HumanDataMsg human_data
 ---
 
 # Response
-straps_msgs/HemoInfo hemorrhage_result
+straps_msgs/HemoInfoDrone hemorrhage_result
 bool success
 string error_message
