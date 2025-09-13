@@ -17,7 +17,6 @@ find_package(straps_msgs REQUIRED)
 # Generate messages and services
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HumanDataMsg.msg"
-  "srv/DroneHemo.srv"
   DEPENDENCIES sensor_msgs builtin_interfaces std_msgs straps_msgs
 )
 
